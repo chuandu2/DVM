@@ -1,5 +1,5 @@
 UNAME := $(shell uname)
-
+#I have no idea what any of this means!  LOLOL! 
 GIT_REV  = $(shell git rev-parse HEAD || "unknown")
 GIT_DATE = $(shell git show -s --format=%ci $(GIT_REV) || "unknown")
 CXXDEFS  = -DGIT_REVISION="\"$(GIT_REV)\"" -DGIT_TIMESTAMP="\"$(GIT_DATE)\""
